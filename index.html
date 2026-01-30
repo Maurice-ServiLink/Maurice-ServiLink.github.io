@@ -33,15 +33,20 @@
             box-sizing: border-box;
         }
         
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-        }
+       body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(26, 26, 46, 0.85), rgba(0, 86, 179, 0.75)), 
+                url('YOUR_PHOTO_URL_HERE');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
         
         body::before {
             content: '';
@@ -3710,4 +3715,5 @@
     </script>
 </body>
 </html>
+
 
