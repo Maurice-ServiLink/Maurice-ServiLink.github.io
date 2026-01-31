@@ -544,15 +544,21 @@
         }
         
         /* Skills & Services Grid */
-        .services-grid, .skills-grid, .providers-grid, .marketplace-grid {
+        .services-grid, .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+            gap: 50px;
+            margin: 40px 0;
+        }
+         /* marketplace & providers Grid */
+        .providers-grid, .marketplace-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            gap: 50px;
+            margin: 70px 0;
         }
         
         .service-card, .skill-card, .product-card, .provider-card {
-            background: var(--glass-bg);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             border: 1px solid var(--glass-border);
@@ -3715,6 +3721,7 @@
     </script>
 </body>
 </html>
+
 
 
 
